@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientorange"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rectboox"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:layout_marginTop="45dp"
+                android:textAlignment="center"
+                android:background="@drawable/retcboox"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="70dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/logo1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/tx_username"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_twotone_person_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/username"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_namalengkap"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_username"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_twotone_account_circle_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/nama_lengkap"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_namalengkap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_twotone_email_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/email"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_password"
+                    android:inputType="textPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_email"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_twotone_vpn_key_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/password"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_alamat"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_twotone_location_on_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/alamat"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_telepon"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_alamat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_baseline_call_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Telepon"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_jk"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_telepon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_baseline_people_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/jenis_kelamin"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/tx_hobi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_jk"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/ic_baseline_mood_24"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/hobi"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <Button
+                    android:id="@+id/button_regis"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_hobi"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="@color/orange"
+                    android:padding="10dp"
+                    android:text="@string/daftar"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.439"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.728"
+                    app:layout_constraintWidth_percent=".8"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <TextView
+                    android:id="@+id/tx_sudah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_regis"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="140dp"
+                    android:hint="Sudah punya akun? "
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.344"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.200" />
+
+                <TextView
+                    android:id="@+id/tx_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_regis"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="85dp"
+                    android:onClick="masuk"
+                    android:text="@string/masuk"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toEndOf="@+id/tx_sudah"
+                    app:layout_constraintVertical_bias="0.200" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tx_daftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="DAFTAR"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

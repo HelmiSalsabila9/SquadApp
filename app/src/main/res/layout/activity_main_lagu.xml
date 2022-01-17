@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLaguActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Lagu"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lagu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/nm_lagu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lagu_view"
+        android:layout_marginTop="10dp"
+        android:text="Nama Lagu" />
+
+    <TextView
+        android:id="@+id/nm_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nm_lagu"
+        android:layout_marginTop="10dp"
+        android:text="Nama Genre" />
+
+    <TextView
+        android:id="@+id/nm_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nm_genre"
+        android:layout_marginTop="10dp"
+        android:text="Nama Artist" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nm_artist"
+        android:layout_marginTop="10dp"
+        android:text="Nama Publisiher" />
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins"
+        android:text="Tambah Sekarang" />
+</RelativeLayout>
