@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientorange"
+    tools:context=".BerandaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/btn_dash_tambah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="70dp"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:onClick="dash_tambah"
+                    android:text="Daftar User" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_dash_lagu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="70dp"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:onClick="dash_lagu"
+                    android:text="Daftar Lagu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_dash_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="70dp"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:onClick="dash_publisher"
+                    android:text="Daftar Publisher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_dash_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="70dp"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:onClick="dash_genre"
+                    android:text="Daftar Genre" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_dash_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="320dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="70dp"
+                android:textAlignment="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_shadow_start_color"
+                    android:onClick="dash_artist"
+                    android:text="Daftar Artist" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="350dp">
+
+                <Button
+                    android:id="@+id/btn_det_back"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="110dp"
+                    android:backgroundTint="@color/orange"
+                    android:onClick="masuk"
+                    android:padding="10dp"
+                    android:text="Keluar"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.439"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.728"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tx_daftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="65dp"
+                    android:background="@drawable/retcboox"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="DASHBOARD"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tx_daftarr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="355dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/akunberanda"
+                    android:drawableLeft="@drawable/ic_twotone_person_24"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:onClick="detail"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

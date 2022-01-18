@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SquadApp</string>
+    <string name="politeknik_pos_indonesia">POLITEKNIK POS INDONESIA</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hobi">Hobi</string>
+    <string name="melukis">Melukis</string>
+    <string name="membaca">Membaca</string>
+    <string name="traveling">Traveling</string>
+    <string name="olah_raga">Olah Raga</string>
+    <string name="musik">Musik</string>
+    <string name="already_register">Already Register?</string>
+    <string name="log_in">Log In</string>
+    <string name="register_login">Register</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="alamat">Alamat</string>
+    <string name="telepon">Telepon</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="helmi_salsabila">HELMI SALSABILA</string>
+
+</resources>
