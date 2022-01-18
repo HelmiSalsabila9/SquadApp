@@ -17,6 +17,9 @@ import com.example.squadapp.adapter.LaguAdapter;
 import com.example.squadapp.database.AppDatabase;
 import com.example.squadapp.database.entity.Artist;
 import com.example.squadapp.database.entity.Lagu;
+import com.example.squadapp.database.model.Relasi;
+import com.example.squadapp.database.model.RelasiDua;
+import com.example.squadapp.database.model.RelasiTIga;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +30,9 @@ public class MainLaguActivity extends AppCompatActivity {
     private Button btnTambah;
     private AppDatabase database;
     private LaguAdapter laguAdapter;
-    private List<Lagu> list = new ArrayList<>();
+    private List<Relasi> listArtist = new ArrayList<>();
+    private List<RelasiDua> listGenre = new ArrayList<>();
+    private List<RelasiTIga> listPublisher = new ArrayList<>();
     private AlertDialog.Builder dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +43,14 @@ public class MainLaguActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.lagu_view);
         btnTambah = findViewById(R.id.btn_tambah);
         database = AppDatabase.getInstance(getApplicationContext());
-        list.clear();
-        list.addAll(database.laguDao().getAll());
-        laguAdapter = new LaguAdapter(getApplicationContext(), list);
+        listGenre.clear();
+        listGenre.addAll(database.laguDao().getLaguWithGenre());
+        listPublisher.clear();
+        listPublisher.addAll(database.laguDao().getLaguWithPublisher());
+
+        listArtist.clear();
+        listArtist.addAll(database.laguDao().getLaguWithArtist());
+        laguAdapter = new LaguAdapter(getApplicationContext(), listArtist);
         laguAdapter.setDialog(new LaguAdapter.Dialog() {
 
             @Override
@@ -54,12 +64,16 @@ public class MainLaguActivity extends AppCompatActivity {
                             case 0:
                                 Intent intent = new Intent(MainLaguActivity.this,
                                         LaguActivity.class);
-                                intent.putExtra("id_lagu", list.get(position).id_lagu);
+                                intent.putExtra("id_lagu", listArtist.get(position).lagu.id_lagu);
+                                intent.putExtra("id_lagu", listGenre.get(position).lagu.id_lagu);
+                                intent.putExtra("id_lagu", listPublisher.get(position).lagu.id_lagu);
                                 startActivity(intent);
                                 break;
                             case 1:
-                                Lagu lagu = list.get(position);
-                                database.laguDao().delete(lagu);
+                                Relasi laguArtist = listArtist.get(position);
+                                RelasiDua laguGenre = listGenre.get(position);
+                                RelasiTIga laguPublisher = listPublisher.get(position);
+                                database.laguDao().delete(laguArtist.lagu);
                                 onStart();
                                 break;
                         }
@@ -82,8 +96,13 @@ public class MainLaguActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        list.clear();
-        list.addAll(database.laguDao().getAll());
+        listArtist.clear();
+        listArtist.addAll(database.laguDao().getLaguWithArtist());
+        listGenre.clear();
+        listGenre.addAll(database.laguDao().getLaguWithGenre());
+        listPublisher.clear();
+        listPublisher.addAll(database.laguDao().getLaguWithPublisher());
+
         laguAdapter.notifyDataSetChanged();
     }
 

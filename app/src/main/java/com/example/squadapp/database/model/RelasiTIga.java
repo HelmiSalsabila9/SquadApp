@@ -14,7 +14,7 @@ public class RelasiTIga {
 
     @Relation(
 
-            parentColumn = "id_lagu",
+            parentColumn = "publisherId",
             entityColumn = "id_publisher"
     )
     public Publisher publisher;

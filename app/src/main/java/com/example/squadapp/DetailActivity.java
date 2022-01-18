@@ -18,7 +18,7 @@ public class DetailActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
 
     private static final String SHARED_PREF_NAME = "mypref";
-    private static final String KEY_NAMA = "nama";
+    private static final String KEY_NAMA = "namalengkap";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_ALAMAT = "alamat";
     private static final String KEY_TELEPON = "telepon";
@@ -43,17 +43,17 @@ public class DetailActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
 
-        String name = sharedPreferences.getString(KEY_NAMA,null);
+        String nama = sharedPreferences.getString(KEY_NAMA,null);
         String email = sharedPreferences.getString(KEY_EMAIL,null);
         String alamat = sharedPreferences.getString(KEY_ALAMAT,null);
         String telepon = sharedPreferences.getString(KEY_TELEPON,null);
         String jk = sharedPreferences.getString(KEY_JK,null);
         String hobi = sharedPreferences.getString(KEY_HOBI,null);
 
-        if(name != null || email != null || alamat != null || telepon != null){
+        if(nama != null || email != null || alamat != null || telepon != null){
             //so set data on textview
+            textView_nama.setText(nama);
             textView_email.setText(email);
-            textView_nama.setText(name);
             textView_alamat.setText(alamat);
             textView_telepon.setText(telepon);
             textView_jk.setText(jk);

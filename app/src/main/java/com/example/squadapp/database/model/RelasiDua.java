@@ -14,7 +14,7 @@ public class RelasiDua {
 
     @Relation(
 
-            parentColumn = "id_lagu",
+            parentColumn = "artistId",
             entityColumn = "id_artist"
     )
     public Artist artist;

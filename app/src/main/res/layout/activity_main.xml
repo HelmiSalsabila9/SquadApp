@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientorange"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -24,14 +25,15 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="60dp"
+        android:background="@color/whitegradien" />
     <Button
         android:id="@+id/btn_tambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tambah Sekarang"
         android:fontFamily="@font/poppins"
-        android:backgroundTint="@color/orange"
+        android:backgroundTint="@color/cardview_shadow_start_color"
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp" />
 </RelativeLayout>

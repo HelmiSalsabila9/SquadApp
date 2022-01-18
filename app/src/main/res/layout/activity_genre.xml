@@ -5,13 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientorange"
     tools:context=".PublisherActivity">
 
     <TextView
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:text="Tambah Genre"
-        android:textColor="@color/gray"
+        android:textColor="@color/cardview"
         android:textSize="18dp"
         android:textAlignment="center"
         android:layout_marginBottom="40dp"
@@ -27,6 +28,7 @@
         android:layout_marginTop="240dp"
         android:ems="10"
         android:hint="Nama Genre"
+        android:background="@color/whitegradien"
         android:textSize="14sp"
         android:fontFamily="@font/poppins"
         android:inputType="textPersonName"
@@ -41,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="340dp"
-        android:backgroundTint="@color/orange"
+        android:backgroundTint="@color/cardview_shadow_start_color"
         android:fontFamily="@font/poppins"
         android:text="Simpan"
         app:layout_constraintBottom_toBottomOf="parent"

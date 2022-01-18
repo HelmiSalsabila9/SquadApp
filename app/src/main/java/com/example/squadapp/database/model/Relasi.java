@@ -14,7 +14,7 @@ public class Relasi {
 
     @Relation(
 
-            parentColumn = "id_lagu",
+            parentColumn = "genreId",
             entityColumn = "id_genre"
     )
     public Genre genre;

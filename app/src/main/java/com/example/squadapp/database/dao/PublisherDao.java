@@ -14,6 +14,9 @@ public interface PublisherDao {
     @Query("SELECT * FROM publisher")
     List<Publisher> getAll();
 
+    @Query("SELECT nama_publisher FROM publisher")
+    List<String> getAllPublisher();
+
     @Query("INSERT INTO publisher (nama_publisher) VALUES(:nama_publisher)")
     void insertAll(String nama_publisher);
 
@@ -22,6 +25,9 @@ public interface PublisherDao {
 
     @Query("SELECT * FROM publisher WHERE id_publisher=:id_publisher")
     Publisher get(int id_publisher);
+
+    @Query("SELECT id_publisher FROM publisher WHERE nama_publisher=:nama_publisher")
+    Publisher getPublisher(String nama_publisher);
 
     @Delete
     void delete(Publisher publisher);
